@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 10, 2012 2:24:09 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="entities.Mark" table="mark" catalog="Supportive_Learning">
+        <composite-id name="id" class="entities.MarkId">
+            <key-property name="studentId" type="int">
+                <column name="student_id" />
+            </key-property>
+            <key-property name="assignmentId" type="int">
+                <column name="assignment_id" />
+            </key-property>
+        </composite-id>
+        <many-to-one name="assignment" class="entities.Assignment" update="false" insert="false" fetch="select">
+            <column name="assignment_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="student" class="entities.Student" update="false" insert="false" fetch="select">
+            <column name="student_id" not-null="true" />
+        </many-to-one>
+        <property name="mark" type="java.lang.Double">
+            <column name="mark" precision="53" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

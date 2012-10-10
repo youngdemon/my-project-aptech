@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 10, 2012 2:24:09 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="entities.Classes" table="classes" catalog="Supportive_Learning">
+        <id name="classesId" type="int">
+            <column name="classes_id" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" not-null="true" />
+        </property>
+        <property name="years" type="int">
+            <column name="years" not-null="true" />
+        </property>
+        <property name="sort" type="int">
+            <column name="sort" not-null="true" />
+        </property>
+        <property name="enable" type="int">
+            <column name="enable" not-null="true" />
+        </property>
+        <set name="assignments" inverse="true">
+            <key>
+                <column name="classes_id" />
+            </key>
+            <one-to-many class="entities.Assignment" />
+        </set>
+        <set name="students" inverse="true">
+            <key>
+                <column name="classes_id" />
+            </key>
+            <one-to-many class="entities.Student" />
+        </set>
+        <set name="staffs" inverse="false" table="classes_ss">
+            <key>
+                <column name="classes_id" not-null="true" />
+            </key>
+            <many-to-many entity-name="entities.Staff">
+                <column name="staff_id" not-null="true" />
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>
