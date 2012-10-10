@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : Oct 9, 2012, 2:41:49 PM
+    Document   : login
+    Created on : Oct 9, 2012, 2:44:56 PM
     Author     : admin
 --%>
 
@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Trang chu</h1>
+        <h1>login</h1>
     </body>
 </html>

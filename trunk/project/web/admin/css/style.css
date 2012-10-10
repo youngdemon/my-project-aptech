@@ -1,0 +1,243 @@
+html {
+	scrollbar-face-color: #CECECE;
+	scrollbar-shadow-color: #6B6B6B;
+	scrollbar-highlight-color: #F8F8F8;
+	scrollbar-3dlight-color: #8A8A8A;
+	scrollbar-darkshadow-color: #8A8A8A;
+	scrollbar-track-color: #8A8A8A;
+	scrollbar-arrow-color: #215A8C;
+}
+body {
+	margin: 0px 0px 0px 0px;
+}
+td,th {
+	font-family: Tahoma, Arial;
+	font-size: 11px;
+	color: #000000;
+}
+form{ 
+	display: inline;
+	margin: 0; /* removes mystery form tag gapping */ 
+	padding: 0; /* removes mystery form tag gapping */
+	}
+input,
+textarea,
+select{
+	background: #F4F5F7;
+	border: 1px solid #808080;
+	color: #000;
+	font-family: Tahoma, Arial;
+	font-size: 12px;
+	margin: 1px;
+	padding: 2px;
+	vertical-align: middle;
+	}
+img { 
+	border : 0px;
+}
+.main_table {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #48575A;
+	border-left-color: #48575A;
+}
+a {
+	font-size: 11px;
+	color: #003333;
+}
+a:link {
+	text-decoration: none;
+	color: #006699;
+}
+a:visited {
+	text-decoration: none;
+	color: #006699;
+}
+a:hover {
+	text-decoration: none;
+	color: #FF6600;
+}
+a:active {
+	text-decoration: none;
+	color: #0066FF;
+}
+.nav_tittle {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.nav_tittle :link {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.nav_tittle :visited {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.tittle {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #003366;
+	font-weight: bold;
+	color: #003333;
+	text-decoration: none;
+	font-size: 12px;
+}
+.br_sp {
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #003366;
+	color: #003333;
+	text-decoration: none;
+	font-size: 11px;
+}
+.maintittle {
+	font-size: 16px;
+	font-weight: bold;
+	color: #003300;
+}
+.row_tittle {
+	background-color: #8AA1A6;
+	height:25px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12px;
+}
+.row_tittle a{
+	background-color: #8AA1A6;
+	height:25px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12px;
+}
+.row {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #003366;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #003366;
+	color: #003333;
+	text-decoration: none;
+	font-size: 12px;
+	height:30px;
+}
+.row1 {
+	padding-left:5px;
+	border-left-width: 1px;
+	border-left-style: dotted;
+	border-left-color: #003366;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #003366;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #003366;
+	color: #003333;
+	text-decoration: none;
+	font-size: 12px;
+	height:30px;
+}
+.sub_row {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #003366;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #003366;
+	color: #FF6C00;
+	text-decoration: none;
+	font-size: 12px;
+	background-color: #F4ECE0;
+}
+.sub_row1 {
+	border-left-width: 1px;
+	border-left-style: dotted;
+	border-left-color: #003366;
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #003366;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #003366;
+	color: #FF6C00;
+	text-decoration: none;
+	font-size: 12px;
+	background-color: #F4ECE0;
+}
+.row_over {
+	background:#FFFFCC;
+}
+
+.Submit {
+cursor:pointer
+}
+
+.wrapper{
+width:1007px;
+/*
+margin-left: auto;
+margin-right: auto;
+*/
+line-height:15px;
+}
+
+.menu{
+float:left;
+width:160px;
+overflow:hidden;
+}
+
+.content{
+/*line-height:1.5em;*/
+margin: 0px 5px 0px 5px;
+float:right;
+width:837px;
+text-align:left;
+padding-top:30px;
+}
+
+.content .table_wrapper{
+	width: 95%;
+}
+
+.message {
+	line-height:30px;
+	text-align:center;
+	color:#FF0000;
+	font-size:14px;
+}
+
+.row_search {
+	padding-left:5px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #003366;
+	color: #003333;
+	text-decoration: none;
+	font-size: 12px;
+	line-height:30px;
+}
+
+.note {
+	color: #FF0000;
+}
+
+.border table td {
+	padding: 5px;
+	background:  #FFFFFF;
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.border table thead td {
+	background-color: #8AA1A6;
+	height:25px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 12px;
+}
